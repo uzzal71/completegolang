@@ -12,6 +12,9 @@ func main() {
 		RMB
     )
 
-	symbol := [...]string{USD: "$", EUR: "E", GBP: "EUR", RMB: "R"}
-	fmt.Println(symbol[USD])
+	symbol := [...]string{USD: "$", EUR: "E", GBP: "G", RMB: "R"}
+	
+	for i, v := range symbol {
+		fmt.Println(i, v)
+	}
 }
