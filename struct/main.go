@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type person struct {
 	firstName string
 	lastName  string
@@ -7,4 +9,5 @@ type person struct {
 
 func main() {
 	alex := person{"Uzzal","Roy"}
+	fmt.Println(alex)
 }
