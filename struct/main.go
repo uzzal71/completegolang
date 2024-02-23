@@ -5,4 +5,6 @@ type person struct {
 	lastName  string
 }
 
-func main() {}
+func main() {
+	alex := new(person)
+}
