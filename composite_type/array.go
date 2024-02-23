@@ -7,5 +7,5 @@ func main() {
 		"alice": 31,
 		"charlie": 34,
 	}
-	fmt.Println(ages)
+	fmt.Println(ages["alice"],ages["charlie"])
 }
