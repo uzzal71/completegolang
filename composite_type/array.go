@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	data := []string{"foo", "bar"}
-	fmt.Printf("%q\n", data)
+	ages := map[string]int{
+		"alice": 31,
+		"charlie": 34,
+	}
+	fmt.Println(ages)
 }
