@@ -17,5 +17,5 @@ type product struct {
 
 func main() {
 	product := product{name: "test", slug: "test", price: 25.36, stock: 100}
-	fmt.Println(product)
+	fmt.Println(product.name, product.slug, product.price)
 }
