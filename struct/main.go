@@ -11,6 +11,7 @@ type product struct {
 	name string
 	slug string
 	price float64
+	stock int
 }
 
 
