@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type person struct {
 	firstName string
 	lastName  string
@@ -16,6 +14,6 @@ type product struct {
 
 
 func main() {
-	alex := person{firstName: "Uzzal",lastName: "Roy"}
-	fmt.Println(alex.firstName, alex.lastName)
+	product := product{name: "test", slug: "test", price: 25.36, stock: 100}
+	
 }
