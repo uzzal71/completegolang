@@ -10,6 +10,7 @@ type person struct {
 type product struct {
 	name string
 	slug string
+	price float64
 }
 
 
