@@ -8,6 +8,10 @@
 
 package main
 
+import "fmt"
+
 func main() {
-	
+	// Create slices
+	var mySlice []int
+	fmt.Println(mySlice)
 }
