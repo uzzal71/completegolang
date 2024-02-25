@@ -22,4 +22,18 @@ func main() {
         "cherry": 15,
 	}
 	fmt.Println(myMap2)
+
+	// accessing elements
+	fmt.Println(myMap2["apple"])
+    myMap2["apple"] = 100
+    fmt.Println(myMap2["apple"])
+
+    // deleting elements
+    delete(myMap2, "banana")
+    fmt.Println(myMap2)
+
+    // iterating over map
+    for k, v := range myMap2 {
+        fmt.Printf("key: %s, value: %d\n", k, v)
+    }
 }
