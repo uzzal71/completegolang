@@ -22,4 +22,13 @@ func main() {
 	// Slice of Slice 
 	newSlice := mySlice[2:6]
 	fmt.Println(newSlice)
+
+	// copying slice
+	newSlice2 := make([]int, len(newSlice))
+    copy(newSlice2, newSlice)
+    fmt.Println(newSlice2)
+
+	newSlice2[2] = 500;
+	fmt.Println(newSlice)
+	fmt.Println(newSlice2)
 }
