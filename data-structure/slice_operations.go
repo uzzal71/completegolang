@@ -18,4 +18,8 @@ func main() {
     for i, v := range mySlice {
         fmt.Printf("index: %d, value: %d\n", i, v)
     }
+
+	// Slice of Slice 
+	newSlice := mySlice[2:6]
+	fmt.Println(newSlice)
 }
