@@ -28,6 +28,10 @@ func main() {
     myMap2["apple"] = 100
     fmt.Println(myMap2["apple"])
 
+	// add new key
+	myMap2["orange"] = 200
+    fmt.Println(myMap2)
+
     // deleting elements
     delete(myMap2, "banana")
     fmt.Println(myMap2)
