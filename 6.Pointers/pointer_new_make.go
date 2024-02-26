@@ -10,5 +10,9 @@ func main() {
 	fmt.Println(p, *p)
 
 	// make function
+	// slice
+	// map
 
+	s := make([]int, 5)
+	fmt.Println(s)
 }
