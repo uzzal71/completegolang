@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 type CustomError struct {
 	Msg string
@@ -13,7 +16,8 @@ func (e CustomError) Error() string {
 
 func SuperDivide(a, b int) (int, error) {
 	if b == 0 {
-        return 0, CustomError{Msg: "division by zero", Code: 1}
+       // return 0, CustomError{Msg: "division by zero", Code: 1}
+	   return 0, errors.New("division by zero")
     }
 	
 	if a % b != 0 {
@@ -24,10 +28,16 @@ func SuperDivide(a, b int) (int, error) {
 }
 
 func main() {
-	result, err := SuperDivide(4, 0)
+	result, err := SuperDivide(4, 3)
 	if (err != nil) {
-		fmt.Println("Error:", err.Error())
-		return
+		var cErr CustomError
+		if errors.As(err, &cErr) {
+            fmt.Println("Customer error occurred")
+			fmt.Println("Code", cErr.Code, "Message:", cErr.Msg)
+        } else {
+			fmt.Println(err.Error())
+			return
+		}
 	}
 	fmt.Println(result)
 }
