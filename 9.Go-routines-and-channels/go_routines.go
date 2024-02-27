@@ -22,5 +22,7 @@ func printLetters() {
 func main() {
 	go printNumbers()
 	// printLetters()
+
+	time.Sleep(2000 * time.Millisecond)
 	fmt.Println("Main function finished")
 }
