@@ -8,6 +8,12 @@ func printNumbers() {
 	}
 }
 
+func printLetters() {
+	for i := 'a'; i <= 'e'; i++ {
+        fmt.Println(i)
+    }
+}
+
 func main() {
 	
 }
