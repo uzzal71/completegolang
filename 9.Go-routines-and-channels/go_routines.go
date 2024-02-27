@@ -20,6 +20,7 @@ func printLetters() {
 }
 
 func main() {
-	printNumbers()
-	printLetters()
+	go printNumbers()
+	// printLetters()
+	fmt.Println("Main function finished")
 }
