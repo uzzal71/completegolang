@@ -6,7 +6,7 @@ import (
 )
 
 func printNumbers() {
-	for i := 1; i < 5; i++ {
+	for i := 1; i <= 5; i++ {
 		time.Sleep(250 * time.Millisecond)
 		fmt.Println(i)
 	}
