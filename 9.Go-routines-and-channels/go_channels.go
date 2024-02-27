@@ -2,11 +2,15 @@ package main
 
 import "fmt"
 
-func Multiply(a, b int) int {
-	return a * b
+func Multiply(a, b int, ch chan int) {
+	ch <- a * b
 }
 
 func main() {
-	res := Multiply(2, 3)
+	ch := make(chan int) // Buffered channel with capacity 1
+
+	go Multiply(2, 3, ch)
+
+	res := <-ch
 	fmt.Println(res)
 }
