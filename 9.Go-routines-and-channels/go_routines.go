@@ -15,5 +15,6 @@ func printLetters() {
 }
 
 func main() {
-	
+	printNumbers()
+	printLetters()
 }
