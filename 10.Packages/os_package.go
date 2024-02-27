@@ -13,9 +13,9 @@ func main() {
 		os.Exit(1)
 	}
 
+	defer file.Close()
+
 	file.WriteString("Hello world!")
 
 	fmt.Println("File created successfully")
-
-	file.Close()
 }
