@@ -1,8 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func Multiply(a, b int, ch chan int) {
+	time.Sleep(250 * time.Microsecond)
 	ch <- a * b
 }
 
@@ -12,5 +16,10 @@ func main() {
 	go Multiply(2, 3, ch)
 
 	res := <-ch
+	fmt.Println(res)
+
+	close(ch)
+
+	res = <-ch
 	fmt.Println(res)
 }
