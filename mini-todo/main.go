@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	todoList := TodoList{}
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for {
@@ -24,7 +25,10 @@ func main() {
 
 		switch choice {
 			case "1":
-				fmt.Println("Add task")
+				fmt.Print("Enter task name: ")
+				scanner.Scan()
+				taskName := scanner.Text()
+				todoList.AddTask(taskName)
 			case "2":
 				fmt.Println("View tasks")
 			case "3":
