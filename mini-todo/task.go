@@ -13,6 +13,7 @@ func (t *Task) MaskAsDone() {
 		fmt.Println("Task already done.")
 	}
 	t.Done = true
+	fmt.Println("Task marked as done.")
 }
 
 func NewTask(taskId int, taskName string) Task {

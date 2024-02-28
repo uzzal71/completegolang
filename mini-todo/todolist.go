@@ -20,5 +20,8 @@ func (td *TodoList) ViewTask() {
 }
 
 func (td *TodoList) MarkTaskAsDone(taskId int) {
-    fmt.Println("Task marked as done", taskId)
+    if taskId < 1 || taskId > len(td.tasks) {
+		fmt.Println("Invalid Task ID")
+	}
+	td.tasks[taskId-1].MaskAsDone()
 }
