@@ -33,7 +33,7 @@ func main() {
 				fmt.Println("Exit")
 				return
 			default:
-				fmt.Println("Invalid choice")
+				fmt.Println("Invalid choice. Please try again.")
 		}
 	}
 }
