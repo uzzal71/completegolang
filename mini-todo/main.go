@@ -21,7 +21,6 @@ func main() {
 
 		scanner.Scan()
 		choice := scanner.Text()
-		fmt.Println(choice)
 
 		switch choice {
 			case "1":
