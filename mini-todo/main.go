@@ -21,5 +21,19 @@ func main() {
 		scanner.Scan()
 		choice := scanner.Text()
 		fmt.Println(choice)
+
+		switch choice {
+			case "1":
+				fmt.Println("Add task")
+			case "2":
+				fmt.Println("View tasks")
+			case "3":
+				fmt.Println("Mark task as done")
+			case "4":
+				fmt.Println("Exit")
+				return
+			default:
+				fmt.Println("Invalid choice")
+		}
 	}
 }
