@@ -7,10 +7,19 @@ import (
 )
 
 func main() {
-	fmt.Println("======================== TODO LIST ========================")
-
 	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Scan()
-	str := scanner.Text()
-	fmt.Println(str)
+
+	for {
+		fmt.Println("======================== TODO LIST ========================")
+		fmt.Println("1. Add Task")
+		fmt.Println("2. View Tasks")
+		fmt.Println("3. Mark Task as Done")
+		fmt.Println("4. Exit")
+		fmt.Println("============================================================")
+		fmt.Print("Enter your choice: ")
+
+		scanner.Scan()
+		choice := scanner.Text()
+		fmt.Println(choice)
+	}
 }
