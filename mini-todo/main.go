@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 )
 
 func main() {
@@ -29,9 +30,17 @@ func main() {
 				taskName := scanner.Text()
 				todoList.AddTask(taskName)
 			case "2":
-				fmt.Println("View tasks")
+				todoList.ViewTask()
 			case "3":
-				fmt.Println("Mark task as done")
+				fmt.Print("Enter task ID: ")
+				scanner.Scan()
+				taskIdStr := scanner.Text()
+				taskId, err := strconv.Atoi(taskIdStr)
+				if err!= nil {
+                    fmt.Println("Invalid task ID")
+                    continue
+                }
+				todoList.MarkTaskAsDone(taskId)
 			case "4":
 				fmt.Println("Exit")
 				return
