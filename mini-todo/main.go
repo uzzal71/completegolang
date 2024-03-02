@@ -7,6 +7,7 @@ import (
 	"strconv"
 )
 
+// main
 func main() {
 	todoList := TodoList{}
 	scanner := bufio.NewScanner(os.Stdin)
