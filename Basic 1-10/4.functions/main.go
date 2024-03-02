@@ -7,6 +7,6 @@ func Sum() string {
 }
 
 func main() {
-	a := 5
+	a := Sum()
 	fmt.Println(a)
 }
