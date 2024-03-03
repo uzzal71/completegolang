@@ -7,6 +7,7 @@ type Person struct {
 	Age int
 	Email string
 	Phone string
+	Password string
 }
 
 func main() {
