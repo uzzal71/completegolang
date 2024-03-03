@@ -5,6 +5,7 @@ import "fmt"
 type Person struct {
 	Name string
 	Age int
+	Email string
 }
 
 func main() {
