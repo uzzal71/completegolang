@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	for i := 0; range 5 {
-		
-	}
+	num1 := 5
+	num2 := 10
+	fmt.Println(num1 + num2)
 }
