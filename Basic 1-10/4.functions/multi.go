@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+type Person struct {}
+
 func main() {
 	num1 := 5
 	num2 := 10
