@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
-type Person struct {}
+type Person struct {
+	Name string
+}
 
 func main() {
 	num1 := 5
