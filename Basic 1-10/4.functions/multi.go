@@ -9,6 +9,7 @@ type Person struct {
 	Phone string
 	Address string
 	Password string
+	OTP string
 }
 
 func main() {
