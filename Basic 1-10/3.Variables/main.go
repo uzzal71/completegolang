@@ -18,4 +18,10 @@ func main() {
 	} else {
 		fmt.Println("C is false")
 	}
+
+	if a == 5 {
+        fmt.Println("A is 5")
+    } else {
+        fmt.Println("A is not 5")
+    }
 }
