@@ -15,5 +15,7 @@ func main() {
 
 	if c == true {
 		fmt.Println("C is true")
+	} else {
+		fmt.Println("C is false")
 	}
 }
