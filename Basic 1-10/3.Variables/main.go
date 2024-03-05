@@ -24,4 +24,6 @@ func main() {
     } else {
         fmt.Println("A is not 5")
     }
+
+	d := 25
 }
