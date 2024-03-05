@@ -26,4 +26,9 @@ func main() {
     }
 
 	d := 25
+	if d > 10 {
+        fmt.Println("D is greater than 10")
+    } else {
+        fmt.Println("D is not greater than 10")
+    }
 }
