@@ -12,10 +12,4 @@ func main() {
 	fmt.Printf("B = %f\n", b)
 	fmt.Printf("C = %t\n", c)
 	fmt.Printf("Result = %d\n", result)
-
-	if c == true {
-		fmt.Println("C is true")
-	} else {
-		fmt.Println("C is false")
-	}
 }
