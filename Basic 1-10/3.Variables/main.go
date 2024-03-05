@@ -12,4 +12,6 @@ func main() {
 	fmt.Printf("B = %f\n", b)
 	fmt.Printf("C = %t\n", c)
 	fmt.Printf("Result = %d\n", result)
+
+	e := 5
 }
