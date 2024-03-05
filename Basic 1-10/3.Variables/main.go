@@ -38,7 +38,4 @@ func main() {
     } else {
         fmt.Println("E is not greater than 10")
     }
-
-	i := 14
-	fmt.Printf("%d", i)
 }
