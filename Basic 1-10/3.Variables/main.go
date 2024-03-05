@@ -40,4 +40,5 @@ func main() {
     }
 
 	i := 14
+	fmt.Printf("%d", i)
 }
