@@ -31,11 +31,4 @@ func main() {
     } else {
         fmt.Println("D is not greater than 10")
     }
-
-	e := 20
-	if e > 10 {
-        fmt.Println("E is greater than 10")
-    } else {
-        fmt.Println("E is not greater than 10")
-    }
 }
