@@ -4,7 +4,8 @@ import "fmt"
 
 
 func main() {
-	func(){
-		fmt.Println("Hello world!")
-	}()
+	result := func(x int, y int) int{
+		return x + y
+	}(5, 6)
+	fmt.Println(result)
 }
