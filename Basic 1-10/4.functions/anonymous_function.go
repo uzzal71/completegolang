@@ -15,4 +15,7 @@ func main() {
 
 	result2 := sum(2, 3)
 	fmt.Println(result2)
+
+	a := 10
+	fmt.Println(a)
 }
