@@ -23,4 +23,5 @@ func main() {
 	fmt.Println(b)
 
 	c := a + b
+	fmt.Println(c)
 }
