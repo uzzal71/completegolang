@@ -15,4 +15,8 @@ func main() {
 
 	result2 := sum(2, 3)
 	fmt.Println(result2)
+
+	result3 := func(x int, y int) (int, int) {
+        return x + y, x - y
+    }(2, 3)
 }
