@@ -18,7 +18,4 @@ func main() {
 
 	a := 10
 	fmt.Println(a)
-
-	b := 15
-	fmt.Println(b)
 }
