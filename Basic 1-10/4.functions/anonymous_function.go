@@ -21,4 +21,6 @@ func main() {
 
 	b := 15
 	fmt.Println(b)
+
+	c := a + b
 }
