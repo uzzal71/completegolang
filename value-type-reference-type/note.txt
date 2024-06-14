@@ -1,0 +1,7 @@
+Value Types         Reference Types
+=========================================
+int                     Slices
+float                   maps
+string                  channels
+bool                    pointers
+struct                  functions

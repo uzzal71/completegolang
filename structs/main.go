@@ -10,14 +10,14 @@ type contactInfo struct {
 type person struct {
 	first_name string
 	last_name  string
-	contact    contactInfo
+	contactInfo
 }
 
 func main() {
 	sujon := person{
 		first_name: "Sujon",
 		last_name:  "Roy",
-		contact: contactInfo{
+		contactInfo: contactInfo{
 			email:   "sujon@gmail.com",
 			zipCode: 8700,
 		},
@@ -25,7 +25,7 @@ func main() {
 	tapos := person{
 		first_name: "Tapos",
 		last_name:  "Roy",
-		contact: contactInfo{
+		contactInfo: contactInfo{
 			email:   "tapos@gmail.com",
 			zipCode: 4500,
 		},
@@ -35,10 +35,23 @@ func main() {
 
 	uzzal.first_name = "Uzzal"
 	uzzal.last_name = "Roy"
-	uzzal.contact.email = "uzzal@gmail.com"
-	uzzal.contact.zipCode = 5300
+	uzzal.contactInfo.email = "uzzal@gmail.com"
+	uzzal.contactInfo.zipCode = 5300
 
-	fmt.Printf("%+v\n", sujon)
-	fmt.Printf("%+v\n", tapos)
-	fmt.Printf("%+v\n", uzzal)
+	uzzalPointer := &uzzal
+	uzzalPointer.updateName("Uzzal Kumar")
+
+	tapos.updateName("Tapos Kumar")
+
+	sujon.print()
+	tapos.print()
+	uzzal.print()
+}
+
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).first_name = newFirstName
+}
+
+func (p person) print() {
+	fmt.Printf("%+v\n", p)
 }
