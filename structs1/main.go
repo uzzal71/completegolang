@@ -27,7 +27,8 @@ func main() {
 			zipCode: 8700,
 		},
 	}
-	sujon.updateName("Sujon Kumar")
+	sujonPointer := &sujon
+	sujonPointer.updateName("Sujon Kumar")
 	sujon.print()
 
 	var tapos person
@@ -36,12 +37,13 @@ func main() {
 	tapos.age = 27
 	tapos.contactInfo.email = "tapos@gmail.com"
 	tapos.contactInfo.zipCode = 4500
-	tapos.updateName("Tapos Kumar")
+	taposPointer := &tapos
+	taposPointer.updateName("Tapos Kumar")
 	tapos.print()
 }
 
-func (p person) updateName(newFirstName string) {
-	p.first_name = newFirstName
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).first_name = newFirstName
 }
 
 func (p person) print() {
